@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Nav Bar */
+.navbar-brand img{
+    height: 30px;
+}
+
+header{
+    border-bottom: 7px solid #5DADE2;
+    margin: 0;
+    padding: 0;
+}
+
+.row.content{
+    background-color: white;
+    height: 1500px;
+}
+.sidenav{
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-right: 2px solid rgba(228, 228, 228, 0.541);
+}
+.adminpanel{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #212F3D;
+    border-bottom: 5px solid #D5D8DC;
+    background-color: #5DADE2;
+}
+.profile-img{
+    width: 250px;
+    height: 250px;
+    margin: 10px 65px;
+    border: 5px solid #5DADE2;
+}
+
+.upload-btn{
+    position: relative;
+    overflow: hidden;
+}
+.upload-btn 
+input {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+span,i {
+    padding-right: 5px;
+}
+.span-icon{
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 10px auto;
+}
+.line{
+    width: 70%;
+    height: 2px;
+    margin:5px auto 10px auto;
+    background-color: rgb(90, 90, 175);
+}
+
+
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+ 
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height: auto;} 
+
+    .profile-img{
+        width: 100px;
+        height: 100px;
+        margin: 10px 65px;
+        border: 5px solid cornflowerblue;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+    .sidenav{
+        height: auto;
+        padding: 15px;
+    }
+    .row.content{
+        height: auto;
+    }
+    .profile-img{
+        width: 150px;
+        height: 150px;
+        margin: 10px auto;
+        border: 5px solid cornflowerblue;
+    }
+    
+}

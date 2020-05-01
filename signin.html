@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/from.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+</head>
+
+<style>
+    #loading {
+        background: url('Images2/loading.gif') no-repeat center center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9999999;
+    }
+
+
+</style>
+<body>
+
+<div id="loading" style="display: none"></div>
+ 	
+	<div class="limiter" >
+		<div class="container-login100" >
+			<div class="wrap-login100" style="width: 400px;">
+				<div class="login100-form-title">
+					<span class="login100-form-title-1">
+						Sign In
+					</span>
+				</div>
+                <div class="card-body">
+                    <form class="form" role="form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="txtUserName">User Name</label>
+                            <input type="email" class="form-control" id="txtUserName" placeholder="User Name" required="">
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="txtUserName" id="lblInvalidUserName">invalid username</label>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPassword">Password</label>
+                            <input type="password" class="form-control" id="txtPassword" placeholder="Password" required="">
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="txtPassword" id="lblInvalidPassword">password is empty</label>
+
+                        </div>
+                        <h6 class="text-center"><a href="./PasswordReset.html" class="link-text">Forget Password</a></h6>
+                      
+                        <div class="form-group">
+                            <button type="button" class="btn btn-success btn-sm form-control" onclick="login()">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <h6 class="text-center"><a href="./signup.html" class="link-text">Create Account</a></h6>
+                <br>
+			</div>
+		</div>
+	</div>
+	
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Placed js at the end of the document so the pages load faster -->
+<!-- jquery latest version -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap framework js -->
+<script src="js/bootstrap.min.js"></script>
+<!--  ajax-mail.js  -->
+<script src="js/ajax-mail.js"></script>
+<!-- All js plugins included in this file. -->
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" >
+        MAIN_URL  ="http://localhost:8080";
+        function login() {
+
+            var lblUserName = document.getElementById("lblInvalidUserName");
+            var lblpassword = document.getElementById("lblInvalidPassword");
+
+
+            if($('#txtUserName').val() == ""){
+                lblUserName.style.display ='block';
+                lblpassword.style.display ='none';
+            }else if($('#txtPassword').val() == "") {
+                lblUserName.style.display ='none';
+                lblpassword.style.display ='block';
+            }else {
+
+                $('#loading').show();
+                var request = {
+                    userName: $('#txtUserName').val(),
+                    password: $('#txtPassword').val(),
+
+                }
+
+                $.ajax({
+                    url: this.MAIN_URL+"/login",
+                    type: 'POST',
+                    contentType: "application/json",
+                    data: JSON.stringify(request),
+                    dataType: "text",
+                    success : function(response) {
+                        sessionStorage.setItem('token',response)
+                        $('#loading').hide();
+                        window.location.href = "index.html"
+                    } ,
+                    error: function (error) {
+                        alert(error.responseText);
+                        $('#loading').hide();
+                    }
+                });
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>

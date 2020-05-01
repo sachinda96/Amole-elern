@@ -1,0 +1,831 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home page ||  Aමොළේ</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-2--background-transparent.png">
+    
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Style customizer (Remove these two lines please) -->
+    <link rel="stylesheet" href="css/color/color-1.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!--Font awesome CDN-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+   
+    <!-- Font Awesome -->
+
+</head>
+
+<body onload="onLoad()">
+  
+        
+     
+        
+ 
+    
+
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->  
+    <!-- Body main wrapper start -->
+    <div class="wrapper" >
+        <header>      
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><img src="./Images2/logos/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="nav navbar-nav ml-auto ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="font-size: 15px;color: azure;">home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" style="font-size: 15px;color: azure;">about us<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#" style="font-size: 15px;color: azure;">contact us<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="signin.html" style="font-size: 15px;color: azure;" id="navSignIn">sign in<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="signup.html" style="font-size: 15px;color: azure;" id="navSignUp">sign up<span class="sr-only">(current)</span></a>
+                    </li>
+        
+                    <li class="nav-item" id="profile" >
+                    <div class="dropdown">
+                        
+                        <a href="./dashbord.html">
+                        <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+                        </a>
+                        <button class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        </button>
+                        
+                        <div class="dropdown-menu dropdown-menu-right drop" style="margin: 10px 0;" aria-labelledby="dropdownMenu2">
+                          <button class="dropdown-item" type="button"><a href="./dashbord.html" class="icon-link" style="font-size: 14px;"><i class="fas fa-tachometer-alt"></i>Dashbord</a></button>
+                          <button class="dropdown-item" type="button"><a href="" class="icon-link" style="font-size: 14px;" onclick="logout()"><i class="fas fa-sign-out-alt"></i>Log out</a></button>
+                        </div>
+                    </div>
+                    </li>
+                   
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        <!-- mobile-menu-area start -->
+    
+
+        
+        <!-- mobile-menu-area end -->
+        <!-- End of header area -->
+        <!-- Start of slider area -->
+
+      
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/1.jpg" style="height: 450px;" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>“A man's mind, stretched by new ideas, may never return to its original dimensions.”</h5>
+                  <p style="color: black;font-style: inherit;">Oliver Wendell Holmes Jr.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/2.jpg" style="height: 450px;" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>“Anyone who has never made a mistake has never tried anything new.”</h5>
+                  <p style="color: black;font-style: inherit;">Albert Einstein</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/3.jpg" style="height: 450px;" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>“He who opens a school door, closes a prison.”</h5>
+                  <p style="color: black;font-style: inherit;">Victor Hugo</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        <!-- End of slider area --> 
+        <!-- Start page content -->
+        <section class="service-area gray-bg ptb-110">
+            <!-- Demo Section    -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="service-all white-bg">
+                            <h2>We Have 65 Years <br>Experience In This Passion</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="service-left">
+                                        <div class="offer-icon">
+                                            <i class="icofont icofont-support"></i>
+                                        </div>
+                                        <div class="offer-text">
+                                            <h3>Quick Help</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="service-left mrg-xs">
+                                        <div class="offer-icon">
+                                            <i class="icofont icofont-world"></i>
+                                        </div>
+                                        <div class="offer-text">
+                                            <h3>In Your Country</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="service-left service-mrg mrg-xs">
+                                        <div class="offer-icon">
+                                            <i class="icofont icofont-gift"></i>
+                                        </div>
+                                        <div class="offer-text">
+                                            <h3>Scholarship For Students</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="service-left service-mrg mrg-xs">
+                                        <div class="offer-icon">
+                                            <i class="icofont icofont-football-american"></i>
+                                        </div>
+                                        <div class="offer-text">
+                                            <h3>Sports & Events</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-from navy-bg">
+                            <h3>Courses Search</h3>
+                            <form class="ordering">
+                                <div class="orderby-wrapper">
+                                    <label>Select Course*</label>
+                                    <select name="orderby" class="orderby">
+                                        <option value="menu_order">Primary</option>
+                                        <option value="popularity" selected='selected'>Ordinary Level</option>
+                                        <option value="rating">Advansed Level</option>
+                                        <option value="date">University</option>
+                                        <option value="price">Spoken English</option>
+                                        <option value="price-desc">IT Course</option>
+                                    </select>
+                                </div>
+                                <div class="orderby-wrapper mrg-chosen">
+                                    <label>Ceategory*</label>
+                                    <select name="orderby" class="orderby">
+                                        <option value="menu_order">Grade 1</option>
+                                        <option value="popularity" >Grade 2</option>
+                                        <option value="rating">Grade 3</option>
+                                        <option value="date">Grade 4</option>
+                                        <option value="price">Grade 5</option>
+                                        <option value="price-desc">Grade 6</option>
+                                        <option value="price-desc">Grade 7</option>
+                                        <option value="price-desc">Grade 8</option>
+                                        <option value="price-desc">Grade 9</option>
+                                        <option value="price-desc">Grade 10</option>
+                                        <option value="price-desc">Grade 11</option>
+                                        <option value="price-desc">Grade 12</option>
+                                        <option value="price-desc">Grade 13</option>
+                                     
+                                    </select>
+                                </div>
+                                <div class="orderby-wrapper">
+                                    <label>Subject*</label>
+                                    <select name="orderby" class="orderby">
+                                        <option value="menu_order">Sinhala</option>
+                                        <option value="popularity" selected='selected'>Buddisum</option>
+                                        <option value="rating">Mathathics</option>
+                                        <option value="date">Science</option>
+                                        <option value="price">English</option>
+                                        <option value="price-desc"></option>
+                                         <option value="price-desc"></option>
+                                          <option value="price-desc"></option>
+                                           <option value="price-desc"></option>
+                                            <option value="price-desc"></option>
+
+                                    </select>
+                                </div>
+                                <div class="chosen-submit text-center">
+                                    <a class="button extra-small" href="#">
+                                        <span>search</span>
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- top viewers session -->
+        <section class="banner-blog-area ptb-110">
+            <div class="container">
+ 			 <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/4.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>සිංහල</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-sm mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/3.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>ගණිතය</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-sm mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/4.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>විද්‍යාව</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/3.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>ICT</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/3.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>භෞතික විද්‍යාව</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/4.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>සිංහල සාහිත්‍ය</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/3.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>රසායනික විද්‍යාව</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-sm-6">
+                        <div class="blog-all mrg-xs">
+                            <div class="blog-img">
+                                <a href="Sign In.html"><img src="images/blog/4.gif" alt="" ></a>
+                            </div>
+                            <div class="blog-details">
+                                <h3><center>ඒකාබද්ධ ගණිතය</center></h3>
+                                <div class="blog-meta">
+                                    <span class="published3">
+                                        <a href="#"><i class="icofont icofont-eye"></i> 34</a>
+                                    </span>
+                                    <span class="published4">
+                                        <a href="#"><i class="icofont icofont-comment"></i> 20</a>
+                                    </span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consect elit, sed do eiusmod </p>
+                            </div>
+                        </div>
+              </div>
+            </div>
+        </section>
+        <div class="counter-area bg-2 bg-opacity bg-relative ptb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 text-center">
+                        <div class="counter-bottom2">
+                      
+                            <div class="counter-img">
+                                <img src="images/icons/1.png" alt="" >
+                            </div>
+                            <div class="counter-all">
+                                <div class="counter-next2">
+                                    <h2>Teachers</h2>
+                                </div>
+                                <div class="counter cnt-two">
+                                    <h1>50</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3  text-center">
+                        <div class="counter-bottom2 mrg-xs">
+                            <div class="counter-img">
+                                <img src="images/icons/2.png" alt="" >
+                            </div>
+                            <div class="counter-all">
+                                <div class="counter-next2">
+                                    <h2>Students</h2>
+                                </div>
+                                <div class="counter cnt-two">
+                                    <h1>3554</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3  text-center">
+                        <div class="counter-bottom2 mrg-xs">
+                            <div class="counter-img">
+                                <img src="images/icons/3.png" alt="" >
+                            </div>
+                            <div class="counter-all">
+                                <div class="counter-next2">
+                                    <h2>Research</h2>
+                                </div>
+                                <div class="counter cnt-two">
+                                    <h1>354</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3  text-center">
+                        <div class="counter-bottom2 mrg-xs">
+                            <div class="counter-img">
+                                <img src="images/icons/4.png" alt="" >
+                            </div>
+                            <div class="counter-all">
+                                <div class="counter-next2">
+                                    <h2>Awards</h2>
+                                </div>
+                                <div class="counter cnt-two">
+                                    <h1>44</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="testimonial-area ptb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <div class="testimonial-text">
+                            <h2>Our Teachers</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+
+                        
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="testimonial-all">
+                    <div class="testimonial-peragraph">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu
+nt ut la et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+mlaboris nisi ut aliquip ex ea commodo conseq</p>
+                    </div>
+                    <div class="testimonial-img">
+                        <img alt="" src="images/banner/2.jpg" >
+                        <div class="img-title navy-bg">
+                            <h3>Al-Rayed</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-all">
+                    <div class="testimonial-peragraph">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu
+nt ut la et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+mlaboris nisi ut aliquip ex ea commodo conseq</p>
+                    </div>
+                    <div class="testimonial-img">
+                        <img alt="" src="images/banner/2.jpg" >
+                        <div class="img-title navy-bg">
+                            <h3>Al-Rayed</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="testimonial-all">
+                    <div class="testimonial-peragraph">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu
+nt ut la et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ulla
+mlaboris nisi ut aliquip ex ea commodo conseq</p>
+                    </div>
+                    <div class="testimonial-img">
+                        <img alt="" src="images/banner/2.jpg" >
+                        <div class="img-title navy-bg">
+                            <h3>Al-Rayed</h3>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+                        
+                    </div>
+                </div></div>
+            </div>
+        </section>
+
+
+        
+
+
+        <!-- End page content -->
+        <!-- Start footer area -->
+        <footer class="footer-area">
+            <div class="footer-top ptb-110 navy-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="footer-logo-address">
+                                <div class="footer-logo">
+                                    <a href="#"><img src="images/logo-2--background-transparent.png" style="width: 200px; height: 200px;" alt="" ></a>
+                                </div>
+                                <div class="footer-address">
+                                    <div class="header-top-info">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icofont icofont-ui-call"></i>
+                                                    Hotline  (+123) 45 67 89 21
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icofont icofont-envelope"></i>
+                                                    devitmes@gmail.com
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="icofont icofont-location-pin"></i>
+                                                    Dev Items address goes here.
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-8">
+                            <div class="footer-text">
+                                <h3>Courses</h3>
+                                <ul class="footer-text-all">
+                                    <li><a href="#">Primary</a></li>
+                                    <li><a href="#">Ordinary Level</a></li>
+                                    <li><a href="#">Advansed Level</a></li>
+                                    <li><a href="#">University</a></li>
+                                    <li><a href="#">Spoken English</a></li>
+                                    <li><a href="#">IT Course</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="footer-text mrg-sm3 mrg-xs">
+                               <h3>Contact Us</h3>
+                               <form action="#">
+                                    <input placeholder="Name*" type="text">
+                                    <input class="in-mrg" placeholder="Email*" type="email">
+                                    <textarea placeholder="Massage*"></textarea>
+                                    <button class="submit" type="submit">send</button>
+                                </form>
+                            </div>
+                        </div>
+              
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer area -->
+        <!-- start scrollUp
+        ============================================ -->
+        <div id="toTop">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- Body main wrapper end -->
+    <div style="margin-top: 80px;" class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+    <div class="signup-form">	
+        <form method="post">
+            <h2 style="font-size: 30px;">SIGN UP</h2>
+            <p class="lead">It's free and Sign Up and Start Learning!</p>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="Username" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-paper-plane"></i></span>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="required">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <i class="fa fa-lock"></i>
+                        <i class="fa fa-check"></i>
+                    </span>
+                    <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required="required">
+                </div>
+
+                <div id="passwordNotMAtchDiv" class="form-group" style="margin-top: 10px;display:none">
+                <h4 style="color: red;"> **password not natched</h4>
+                </div>
+
+                <div id="InavildEnailDiv" class="form-group" style="margin-top: 10px;display:none">
+                    <h4 style="color: red;"> **invalid email address</Address></h4>
+                    </div>
+
+                    <div id="InavildDetailsDiv" class="form-group" style="margin-top: 10px;display:none">
+                        <h4 style="color: red;"> **invalid details check your missing things</Address></h4>
+                        </div>
+
+                <div class="form-check form-check-inline" style="margin-top: 10px; margin-left: 20px;">
+                    <input class="form-check-input" onclick="isStudentSet()" style="height: 20px;width: 20px;" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">I'm Student</label>
+                  </div>
+                  <div class="form-check form-check-inline" style="margin-top: 10px;margin-left: 30px;">
+                    <input class="form-check-input" onclick="isTeacherSet()" style="height: 20px;width: 20px;margin-top: 10px;" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">I"m Teacher</label>
+                  </div>
+            </div>        
+            <div class="form-group">
+                <button type="button" onclick="signUpClick()" id="signUp" name="signup"  class="btn btn-primary btn-block btn-lg" data-loading-text="<i class='fa fa-spinner fa-spin '></i> processing">Sign Up</button>
+            </div>
+            <p class="small text-center" style="font-size: 12px;">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
+            <div class="text-center" style="font-size: 15px;">Already have an account? <a onclick="getSignIn()" style="color: #19aa8d;cursor: default;">Login here</a>.</div>
+        </form>
+       
+    </div>
+    
+    </div>
+    
+
+    <div style="margin-top: 80px;"  class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+
+        <div class="signup-form">	
+            <form method="post">
+                <h2 style="font-size: 30px;">SIGN IN</h2>
+                <p class="lead">It's free and Sign Up and Start Learning!</p>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control"  name="usernamelogin" id="usernamelogin" placeholder="Username" required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" class="form-control" name="passwordlogin" id="passwordlogin" placeholder="Password" required="required">
+                    </div>
+                </div>       
+                <div class="form-group">
+                    <button type="button" onclick="login()" class="btn btn-primary btn-block btn-lg" id="loginbtn" name="loginbtn"  class="btn btn-primary btn-block btn-lg" data-loading-text="<i class='fa fa-spinner fa-spin '></i> processing">Sign In</button>
+                </div>
+                <div class="text-center" style="font-size: 15px;">You Have't an account? <a onclick="getSignUp()" style="color: #19aa8d;cursor: default;">Sign Up here</a>.</div>
+            </form>
+           
+        </div>
+        
+        </div>
+
+        
+
+       
+    
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <!-- jquery latest version -->
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--  ajax-mail.js  -->	
+    <script src="js/ajax-mail.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+
+        function onLoad(){
+           
+            
+            console.log(sessionStorage.getItem("token"))
+
+            if(sessionStorage.getItem("token") != null){
+                 $("#profile").show();
+                $("#navSignIn").hide();
+                $("#navSignUp").hide();
+
+            }else{
+
+                $("#profile").hide();
+                $("#navSignIn").show();
+                $("#navSignUp").show();
+            }
+
+        }
+    
+
+
+        isStudent =0;
+        isTeacher =0;
+        MAIN_URL  ="http://localhost:8080";
+
+        function isStudentSet(){
+            isTeacher=0
+                if(isStudent ==0 ){
+                    isStudent=1;
+                }else{
+                    isStudent-0
+                }  
+        }
+
+        function isTeacherSet(){
+            isStudent=0;
+            if(isTeacher == 0){
+                isTeacher =1;
+            }else{
+                isTeacher =0;
+            }
+        }
+
+
+        function getSignUp(){
+            $('#login').modal('hide')
+            $('#exampleModalLong').modal('show')
+        }
+
+        function getSignIn(){
+            $('#exampleModalLong').modal('hide')
+            $('#login').modal('show')
+        }
+
+
+
+      function  logout(){
+            sessionStorage.removeItem("token");
+            window.reload()
+
+        }
+
+    </script>
+
+</body>
+
+
+</html>

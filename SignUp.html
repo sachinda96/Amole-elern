@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/from.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <style>
+        #loading {
+            background: url('Images2/loading.gif') no-repeat center center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 9999999;
+        }
+
+
+    </style>
+
+</head>
+
+
+
+<body>
+
+<div id="loading" style="display: none"></div>
+
+    <div id="mainDiv" class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100" style="width: 400px;">
+                <div class="login100-form-title">
+                    <span class="login100-form-title-1">
+                        Sign Up
+                    </span>
+                </div>
+                <div class="card-body">
+                    <form id="signupForm" class="form" role="form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="username">User Name</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username"
+                                required="">
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="username" id="lblInvalidUserName">invalid username</label>
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="username" id="lblUserNameTaken">username already taken</label>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required="">
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="email" id="lblInvalidEmail">invalid email</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password"
+                                required="">
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="password" id="lblInvalidPassword">password is empty</label>
+
+                        </div>
+                        <div class="form-group">
+
+                            <label for="confirm_password">Verify</label>
+                            <input type="password" class="form-control" id="confirm_password" placeholder="Password (again)"
+                                required="">
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="confirm_password" id="lblPasswordNotMatch">password not matched</label>
+                            <label style="font-size: 14px;color: red;display: none;float: right" for="confirm_password" id="lblConfirmPasswordInvalid">confirm password is empty</label>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                            <div class="form-check">
+                            <input class="form-check-input"  type="radio" name="exampleRadios" id="isStudent" value="s" checked>
+                            <label class="form-check-label" for="isStudent">
+                                I'm Student
+                            </label>
+                        </div>
+                                </div>
+                                <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="isTeacher" value="t">
+                            <label class="form-check-label" for="isTeacher">
+                                I'm Teacher
+                            </label>
+                        </div>
+                                </div>
+                        </div>
+
+                        <div class="form-group" style="margin-top: 10px">
+                            <button type="button" class="btn btn-success btn-sm form-control" onclick="signUpClick()">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <h6 class="text-center"><a href="./signin.html" class="link-text">I have already account</a></h6><br>
+            </div>
+        </div>
+    </div>
+
+<!-- Placed js at the end of the document so the pages load faster -->
+<!-- jquery latest version -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap framework js -->
+<script src="js/bootstrap.min.js"></script>
+<!--  ajax-mail.js  -->
+<script src="js/ajax-mail.js"></script>
+<!-- All js plugins included in this file. -->
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+        <script type="text/javascript" >
+
+            $(document).ready(function() {
+                console.log($.ajax);
+            });
+
+            var isStudent =false;
+            var isTeacher =false;
+
+
+            function signUpClick() {
+
+                var lblUserName = document.getElementById("lblInvalidUserName");
+                var lblEmail = document.getElementById("lblInvalidEmail");
+                var lblPassword = document.getElementById("lblInvalidPassword");
+                var lblConfirmPassword = document.getElementById("lblConfirmPasswordInvalid");
+                var lblUserNameTaken = document.getElementById("lblUserNameTaken");
+                var lblPasswordNotMatch = document.getElementById("lblPasswordNotMatch");
+
+                var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        
+        
+        
+                if ($('#password').val() != $('#confirm_password').val()) {
+                    lblPasswordNotMatch.style.display = "block";
+                    lblUserNameTaken.style.display = "none";
+                    lblConfirmPassword.style.display = "none";
+                    lblPassword.style.display = "none";
+                    lblEmail.style.display = "none";
+                    lblUserName.style.display = "none";
+                } else if (re.test($('#email').val()) == false) {
+                    lblPasswordNotMatch.style.display = "none";
+                    lblUserNameTaken.style.display = "none";
+                    lblConfirmPassword.style.display = "none";
+                    lblPassword.style.display = "none";
+                    lblEmail.style.display = "block";
+                    lblUserName.style.display = "none";
+                } else if ($('#username').val() == "") {
+                    lblPasswordNotMatch.style.display = "none";
+                    lblUserNameTaken.style.display = "none";
+                    lblConfirmPassword.style.display = "none";
+                    lblPassword.style.display = "none";
+                    lblEmail.style.display = "none";
+                    lblUserName.style.display = "block";
+                } else if ($('#password').val() == "") {
+                    lblPasswordNotMatch.style.display = "none";
+                    lblUserNameTaken.style.display = "none";
+                    lblConfirmPassword.style.display = "none";
+                    lblPassword.style.display = "block";
+                    lblEmail.style.display = "none";
+                    lblUserName.style.display = "none";
+                } else {
+                    lblPasswordNotMatch.style.display = "none";
+                    lblUserNameTaken.style.display = "none";
+                    lblConfirmPassword.style.display = "none";
+                    lblPassword.style.display = "none";
+                    lblEmail.style.display = "none";
+                    lblUserName.style.display = "none";
+
+                    $('#loading').show();
+
+                    var request = {
+                        userName: $('#username').val(),
+                        password: $('#password').val(),
+                        email: $('#email').val(),
+                        isStudent: $("#isStudent:checked").val() == "s" ? 1 : 0,
+                        isTeacher: $("#isTeacher:checked").val() == "t" ? 1 : 0,
+                    };
+
+
+                    $.ajax({
+                        url: "http://localhost:8080/registation",
+                        type: 'POST',
+                        contentType: "application/json",
+                        data: JSON.stringify(request),
+                        dataType: "json",
+                        success: function (data) {
+                            $('#loading').hide();
+                            alert('success');
+                            window.location.href = "index.html"
+                        },
+                        error: function (error) {
+                            $('#loading').hide();
+                            alert(error.responseText);
+                        }
+                    });
+                }
+            }
+
+        </script>
+
+
+</body>
+
+
+
+</html>

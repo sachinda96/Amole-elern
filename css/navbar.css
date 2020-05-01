@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Nav Bar */
+.nav{
+    padding: 2px 8px 2px 25px;
+}
+.navbar-brand img{
+    height: 30px;
+}
+.dropdown-toggle{
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    margin: auto 0px;
+}
+.nav-link{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+.icon-link{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+}
+.icon-link i{
+    padding: 5px 10px;
+}
+
+
+@media screen and (max-width:768px){
+    .nav-item{
+        margin: auto;
+    }
+    .dropdown .drop{
+        position: relative;
+        top: auto;
+        background: transparent;
+        border: none;
+        color: #fff;
+        text-align: center;
+    }
+    .dropdown a{
+      color: #fff;
+    }
+
+}
